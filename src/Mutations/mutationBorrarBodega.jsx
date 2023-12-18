@@ -1,7 +1,7 @@
 import { useMutation } from "react-query";
 import clienteAxios from "../Helpers/clienteAxios";
 
-export function useMutationGuardarBodega() {
+export function useMutationBorrarBodega() {
   return useMutation({
     mutationFn: (id) => {return clienteAxios.delete(`borrarBodega/${id}`)},
     onError: (error) => {

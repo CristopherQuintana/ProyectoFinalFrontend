@@ -1,7 +1,7 @@
 import { useMutation } from "react-query";
 import clienteAxios from "../Helpers/clienteAxios";
 
-export function useMutationGuardarBodega() {
+export function useMutationCrearBodega() {
   return useMutation({
     mutationFn: (params) => {return clienteAxios.post(`guardarBodega/`, params)},
     onError: (error) => {

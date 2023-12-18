@@ -1,7 +1,7 @@
 import { useMutation } from "react-query";
 import clienteAxios from "../Helpers/clienteAxios";
 
-export function useMutationGuardarProducto() {
+export function useMutationBorrarProducto() {
   return useMutation({
     mutationFn: (id) => {return clienteAxios.delete(`borrarProducto/${id}`)},
     onError: (error) => {
